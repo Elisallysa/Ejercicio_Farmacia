@@ -419,10 +419,11 @@ public class StockView {
 
 			if (indice == 0) {
 				btnBack.setVisible(false);
-				btnForward.setVisible(true);
 			} else if (indice == medicamentos.size() - 1) {
 				btnForward.setVisible(false);
+			} else if (indice != 0 && indice != medicamentos.size()-1) {
 				btnBack.setVisible(true);
+				btnForward.setVisible(true);
 			}
 			
 		}
